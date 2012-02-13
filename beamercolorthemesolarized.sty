@@ -1,138 +1,154 @@
-% Beamer Color Theme Solarized Theme 
-% Based off the CSS theme for http://ethanschoonover.com/solarized
-\ProvidesPackage{beamercolorthemesolarized}
+% Beamer Color Theme using the Solarized Palette,
+% http://ethanschoonover.com/solarized.
+%
+% Copyright 2012 Jeffrey B. Arnold
+% 
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-% % TODO: get keys working
-% \RequirePackage{kvoptions}
-% \RequirePackage{etoolbox}
-% \SetupKeyvalOptions{
-%   family=solarized,
-%   prefix=solarized@,
-% }
-% \DeclareBoolOption[false]{dark}
-% \DeclareStringOption[yellow]{accent}[yellow]
-% \ProcessKeyvalOptions{}
+\ProvidesPackage{beamercolorthemesolarized}
+\RequirePackage{etoolbox}
+
+%\newbool{solarizeddark}
+%\setbool{solarizeddark}{true}
+%\newcommand{\solarized@accent}{blue}
+
+%% This is ugly. First time using options and conditionals in LaTeX
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{
+  family=solarized,
+  prefix=solarized@,
+}
+\DeclareBoolOption[false]{dark}
+\DeclareStringOption[]{accent}[yellow]
+\ProcessKeyvalOptions*
+% \show\solarized@accent
+% \show\solarized@darkfalse
+% \show\solarized@darktrue
+% \show\ifsolarized@dark
 
 % Solarized palette
-% SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
-% --------- ------- ---- -------  ----------- ---------- ----------- -----------
-% base03    #002b36  8/4 brblack  234 #1c1c1c  193 100  21
-% base02    #073642  0/4 black    235 #262626  192  90  26
-% base01    #586e75 10/7 brgreen  240 #585858  194  25  46
-% base00    #657b83 11/7 bryellow 241 #626262  195  23  51
-% base0     #839496 12/6 brblue   244 #808080  186  13  59
-% base1     #93a1a1 14/4 brcyan   245 #8a8a8a  180   9  63
-% base2     #eee8d5  7/7 white    254 #e4e4e4   44  11  93
-% base3     #fdf6e3 15/7 brwhite  230 #ffffd7   44  10  99
-% yellow    #b58900  3/3 yellow   136 #af8700   45 100  71
-% orange    #cb4b16  9/3 brred    166 #d75f00   18  89  80
-% red       #dc322f  1/1 red      160 #d70000    1  79  86
-% magenta   #d33682  5/5 magenta  125 #af005f  331  74  83
-% violet    #6c71c4 13/5 brmagenta 61 #5f5faf  237  45  77
-% blue      #268bd2  4/4 blue      33 #0087ff  205  82  82
-% cyan      #2aa198  6/6 cyan      37 #00afaf  175  74  63
-% green     #859900  2/2 green     64 #5f8700   68 100  60
-
-% TODO: define colors in RGB, HSB
-\definecolor{beamer@solarized@base03}{HTML}{002B36}
-\definecolor{beamer@solarized@base02}{HTML}{073642}
-\definecolor{beamer@solarized@base01}{HTML}{586e75}
-\definecolor{beamer@solarized@base00}{HTML}{657b83}
-\definecolor{beamer@solarized@base0}{HTML}{839496}
-\definecolor{beamer@solarized@base1}{HTML}{93a1a1}
-\definecolor{beamer@solarized@base2}{HTML}{EEE8D5}
-\definecolor{beamer@solarized@base3}{HTML}{FDF6E3}
-\definecolor{beamer@solarized@yellow}{HTML}{B58900}
-\definecolor{beamer@solarized@orange}{HTML}{CB4B16}
-\definecolor{beamer@solarized@red}{HTML}{DC322F}
-\definecolor{beamer@solarized@magenta}{HTML}{D33682}
-\definecolor{beamer@solarized@violet}{HTML}{6C71C4}
-\definecolor{beamer@solarized@blue}{HTML}{268BD2}
-\definecolor{beamer@solarized@cyan}{HTML}{2AA198}
-\definecolor{beamer@solarized@green}{HTML}{859900}
+\definecolor{solarized@base03}{HTML}{002B36}
+\definecolor{solarized@base02}{HTML}{073642}
+\definecolor{solarized@base01}{HTML}{586e75}
+\definecolor{solarized@base00}{HTML}{657b83}
+\definecolor{solarized@base0}{HTML}{839496}
+\definecolor{solarized@base1}{HTML}{93a1a1}
+\definecolor{solarized@base2}{HTML}{EEE8D5}
+\definecolor{solarized@base3}{HTML}{FDF6E3}
+\definecolor{solarized@yellow}{HTML}{B58900}
+\definecolor{solarized@orange}{HTML}{CB4B16}
+\definecolor{solarized@red}{HTML}{DC322F}
+\definecolor{solarized@magenta}{HTML}{D33682}
+\definecolor{solarized@violet}{HTML}{6C71C4}
+\definecolor{solarized@blue}{HTML}{268BD2}
+\definecolor{solarized@cyan}{HTML}{2AA198}
+\definecolor{solarized@green}{HTML}{859900}
 
 %% Set Accent
 
-% \ifstrequal{\solarized@accent}{yellow}{
-%   \colorlet{beamer@solarized@accent}{beamer@solarized@yellow}
-% }{
-%   \colorlet{beamer@solarized@accent}{beamer@solarized@blue}
-% }
-
-% \colorlet{beamer@solarized@accent}{beamer@solarized@yellow}
-% \colorlet{beamer@solarized@accent}{beamer@solarized@orange}
-% \colorlet{beamer@solarized@accent}{beamer@solarized@red}
-% \colorlet{beamer@solarized@accent}{beamer@solarized@magenta}
-% \colorlet{beamer@solarized@accent}{beamer@solarized@violet}
-% \colorlet{beamer@solarized@accent}{beamer@solarized@blue}
-% \colorlet{beamer@solarized@accent}{beamer@solarized@cyan}
-\colorlet{beamer@solarized@accent}{beamer@solarized@green}
+%\colorlet{solarized@accent}{solarized@yellow}
+\ifdefstring{\solarized@accent}{yellow}{
+  \colorlet{solarized@accent}{solarized@yellow}
+}{}
+\ifdefstring{\solarized@accent}{orange}{
+  \colorlet{solarized@accent}{solarized@orange}
+}{}
+\ifdefstring{\solarized@accent}{red}{
+  \colorlet{solarized@accent}{solarized@red}
+}{}
+\ifdefstring{\solarized@accent}{magenta}{
+  \colorlet{solarized@accent}{solarized@magenta}
+}{}
+\ifdefstring{\solarized@accent}{violet}{
+  \colorlet{solarized@accent}{solarized@violet}
+}{}
+\ifdefstring{\solarized@accent}{blue}{
+  \colorlet{solarized@accent}{solarized@blue}
+}{}
+\ifdefstring{\solarized@accent}{cyan}{
+  \colorlet{solarized@accent}{solarized@cyan}
+}{}
+\ifdefstring{\solarized@accent}{green}{
+  \colorlet{solarized@accent}{solarized@green}
+}{}
 
 %% Set base colors for dark or light versions
 %% Dark
-% \colorlet{beamer@solarized@rebase03}{beamer@solarized@base03}
-% \colorlet{beamer@solarized@rebase02}{beamer@solarized@base02}
-% \colorlet{beamer@solarized@rebase01}{beamer@solarized@base01}
-% \colorlet{beamer@solarized@rebase00}{beamer@solarized@base00}
-% \colorlet{beamer@solarized@rebase0}{beamer@solarized@base0}
-% \colorlet{beamer@solarized@rebase1}{beamer@solarized@base1}
-% \colorlet{beamer@solarized@rebase2}{beamer@solarized@base2}
-% \colorlet{beamer@solarized@rebase3}{beamer@solarized@base3}
-
-%% Light
-\colorlet{beamer@solarized@rebase03}{beamer@solarized@base3}
-\colorlet{beamer@solarized@rebase02}{beamer@solarized@base2}
-\colorlet{beamer@solarized@rebase01}{beamer@solarized@base1}
-\colorlet{beamer@solarized@rebase00}{beamer@solarized@base0}
-\colorlet{beamer@solarized@rebase0}{beamer@solarized@base00}
-\colorlet{beamer@solarized@rebase1}{beamer@solarized@base01}
-\colorlet{beamer@solarized@rebase2}{beamer@solarized@base02}
-\colorlet{beamer@solarized@rebase3}{beamer@solarized@base03}
-
+%\ifbool{solarizeddark}{
+\ifboolexpe{ bool {solarized@dark}}{
+  \colorlet{solarized@rebase03}{solarized@base03}
+  \colorlet{solarized@rebase02}{solarized@base02}
+  \colorlet{solarized@rebase01}{solarized@base01}
+  \colorlet{solarized@rebase00}{solarized@base00}
+  \colorlet{solarized@rebase0}{solarized@base0}
+  \colorlet{solarized@rebase1}{solarized@base1}
+  \colorlet{solarized@rebase2}{solarized@base2}
+  \colorlet{solarized@rebase3}{solarized@base3}
+}{
+  %% Light
+  \colorlet{solarized@rebase03}{solarized@base3}
+  \colorlet{solarized@rebase02}{solarized@base2}
+  \colorlet{solarized@rebase01}{solarized@base1}
+  \colorlet{solarized@rebase00}{solarized@base0}
+  \colorlet{solarized@rebase0}{solarized@base00}
+  \colorlet{solarized@rebase1}{solarized@base01}
+  \colorlet{solarized@rebase2}{solarized@base02}
+  \colorlet{solarized@rebase3}{solarized@base03}
+}
 
 \mode<presentation>
 
-\setbeamercolor{normal text}{fg=beamer@solarized@rebase0, bg=beamer@solarized@rebase03}
-\setbeamercolor{alerted text}{fg=beamer@solarized@accent}
+\setbeamercolor{normal text}{fg=solarized@rebase0, bg=solarized@rebase03}
+\setbeamercolor{alerted text}{fg=solarized@accent}
 % Use pre element from css
-\setbeamercolor{example text}{fg=beamer@solarized@rebase1, bg=beamer@solarized@rebase02}
+\setbeamercolor{example text}{fg=solarized@rebase1, bg=solarized@rebase02}
 
-\setbeamercolor{frametitle}{fg=beamer@solarized@accent, bg=beamer@solarized@rebase03}
-\setbeamercolor{title}{fg=beamer@solarized@accent, bg=beamer@solarized@rebase03}
+\setbeamercolor{frametitle}{fg=solarized@accent, bg=solarized@rebase03}
+\setbeamercolor{title}{fg=solarized@accent, bg=solarized@rebase03}
 
 % Structure elements use css style for header 
-\setbeamercolor{structure}{bg=beamer@solarized@rebase01, fg=beamer@solarized@rebase1}
+\setbeamercolor{structure}{bg=solarized@rebase01, fg=solarized@rebase1}
 
 % Do not mess with subtle colors in palette. I don't like it. 
-\setbeamercolor{palette primary}{bg=beamer@solarized@rebase01, fg=beamer@solarized@rebase1}
-\setbeamercolor{palette secondary}{bg=beamer@solarized@rebase01, fg=beamer@solarized@rebase1}
-\setbeamercolor{palette tertiary}{bg=beamer@solarized@rebase01, fg=beamer@solarized@rebase1}
-\setbeamercolor{palette quaternary}{bg=beamer@solarized@rebase01, fg=beamer@solarized@rebase1}
+\setbeamercolor{palette primary}{bg=solarized@rebase01, fg=solarized@rebase1}
+\setbeamercolor{palette secondary}{bg=solarized@rebase01, fg=solarized@rebase1}
+\setbeamercolor{palette tertiary}{bg=solarized@rebase01, fg=solarized@rebase1}
+\setbeamercolor{palette quaternary}{bg=solarized@rebase01, fg=solarized@rebase1}
 
 % Make Blocks slightly lighter/darker
-\setbeamercolor{block title}{fg=beamer@solarized@accent, bg=beamer@solarized@rebase02}
+\setbeamercolor{block title}{fg=solarized@accent, bg=solarized@rebase02}
 %\setbeamercolor{block title alerted}{}
 %\setbeamercolor{block title example}{}
 
-\setbeamercolor{block body}{parent=normal text, bg=beamer@solarized@rebase02}
+\setbeamercolor{block body}{parent=normal text, bg=solarized@rebase02}
 % \setbeamercolor{block body alerted}{}
 % \setbeamercolor{block body example}{}
 
-
 % same as footline
 % Set Sidebar and footline to use the css style for footer
-\setbeamercolor{footline}{bg=beamer@solarized@rebase01,fg=beamer@solarized@rebase02}
+\setbeamercolor{footline}{bg=solarized@rebase01,fg=solarized@rebase02}
 \setbeamercolor{sidebar}{parent=footline}
-\setbeamercolor{palette sidebar primary}{fg=beamer@solarized@rebase01, fg=beamer@solarized@rebase1}
+\setbeamercolor{palette sidebar primary}{fg=solarized@rebase01, fg=solarized@rebase1}
 \setbeamercolor{palette sidebar secondary}{parent=paletette sidebar primary}
 \setbeamercolor{palette sidebar tertiary}{parent=paletette sidebar primary}
 \setbeamercolor{palette sidebar quaternary}{parent=paletette sidebar primary}
 
-\setbeamercolor{headline}{bg=beamer@solarized@rebase01,fg=beamer@solarized@rebase1}
+\setbeamercolor{headline}{bg=solarized@rebase01,fg=solarized@rebase1}
 
 % border-color for headings
-\setbeamercolor{separation line}{fg=beamer@solarized@rebase0}
-\setbeamercolor{fine separation line}{fg=beamer@solarized@rebase0}
+\setbeamercolor{separation line}{fg=solarized@rebase0}
+\setbeamercolor{fine separation line}{fg=solarized@rebase0}
 
 \mode
 <all>
