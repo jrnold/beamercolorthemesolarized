@@ -31,8 +31,9 @@ The following *<options>* may be given
 
 - ``light`` Use the light theme (default).
 - ``dark`` Use the dark theme.
-- ``accent=``*<color>*. The accent color. *<color>* can be ``yellow``
-    (default), ``orange``, ``red``, ``magenta``, ``violet``, ``blue``, ``cyan``,
+- ``accent=`` *<color>*. The accent color. *<color>* can be any of the
+    non-base Solarized colors: ``yellow`` (default), ``orange``,
+    ``red``, ``magenta``, ``violet``, ``blue``, ``cyan``, or
     ``green``.
 
 
