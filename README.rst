@@ -16,12 +16,14 @@ Emacs among others.
 Installation
 ===============
 
-Get the theme from https://github.com/jrnold/beamercolortheme 
+Get the theme from https://github.com/jrnold/beamercolortheme and
+place it in either the same folder as your presentation .tex file or
+in the LaTeX installation tree.
 
 Documentation
 ================
 
-To load the color theme, add the following to your LaTeX document.
+To load the color theme, add the following line to your document,
 
 ::
 
