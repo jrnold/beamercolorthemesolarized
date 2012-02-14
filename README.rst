@@ -42,6 +42,7 @@ colors which can be used elsewhere.
  
 The package defines the sixteen colors of the Solarized palette.
 
+```
 ==================  =======
 name                 hex
 ==================  =======
@@ -62,6 +63,7 @@ solarized@blue      #268bd2
 solarized@cyan      #2aa198 
 solarized@green     #859900 
 =================   =======
+```
 
 Additionally, it defines these colors, whose values are
 dependent on options specified when the theme is loaded.
