@@ -20,16 +20,16 @@ Get the theme from https://github.com/jrnold/beamercolortheme and
 place it in either the same folder as your presentation .tex file or
 in the LaTeX installation tree.
 
-Documentation
-================
+.. Documentation
+.. ================
 
-To load the color theme, add the following line to your document,
+.. To load the color theme, add the following line to your document,
 
-::
+.. ::
 
-  \usecolortheme[<options>]{solarized}
+..   \usecolortheme[<options>]{solarized}
 
-The following *<options>* may be given
+The following *<options>* may be given when loading the theme,
 
 - ``light`` Use the light theme (default).
 - ``dark`` Use the dark theme.
@@ -72,3 +72,5 @@ dependent on options specified when the theme is loaded.
   
 
 
+
+..  LocalWords:  solarized
