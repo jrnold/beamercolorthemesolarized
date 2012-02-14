@@ -34,7 +34,7 @@ The following *<options>* may be given
 - ``light`` Use the light theme (default).
 - ``dark`` Use the dark theme.
 
-- ``accent`` = <color>. The accent color. This can be any of the
+- ``accent``  The accent color. This can be any of the
     non-base Solarized colors: ``yellow`` (default), ``orange``,
     ``red``, ``magenta``, ``violet``, ``blue``, ``cyan``, or
     ``green``.
