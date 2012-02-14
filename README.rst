@@ -29,11 +29,11 @@ To load the color theme, add the following to your LaTeX document.
 
 The following *<options>* may be given
 
-- `light` Use the light theme (default).
-- `dark` Use the dark theme.
-- `accent=`*<color>*. The accent color. *<color>* can be `yellow`
-    (default), `orange`, `red`, `magenta`, `violet`, `blue`, `cyan`,
-    `green`.
+- ``light`` Use the light theme (default).
+- ``dark`` Use the dark theme.
+- ``accent=``*<color>*. The accent color. *<color>* can be ``yellow``
+    (default), ``orange``, ``red``, ``magenta``, ``violet``, ``blue``, ``cyan``,
+    ``green``.
 
 
 In addition to the beamer colors that it sets, this package defines
