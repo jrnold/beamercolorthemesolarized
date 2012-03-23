@@ -71,7 +71,7 @@ Additionally, it defines these colors, the values of which are
 dependent on the options specified when the theme is loaded.
 
 - ``solarized@accent`` Accent color.
-- ``solarized@rebase03``,``solarized@rebase02``,``solarized@rebase01``,``solarized@rebase00``: Background colors; dark colors if the dark theme is used, light colors if light theme.
+- ``solarized@rebase03``, ``solarized@rebase02``, ``solarized@rebase01``, ``solarized@rebase00``: Background colors; dark colors if the dark theme is used, light colors if light theme.
 - ``solarized@rebase0``, ``solarized@rebase1``, ``solarized@rebase2``, ``solarized@rebase3``: Foreground colors; light colors if the dark theme is used, dark colors if light theme.
   
 
