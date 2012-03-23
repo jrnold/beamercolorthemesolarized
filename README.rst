@@ -10,8 +10,7 @@ inspired by the css stylesheet of `ethanshoover.com
 See the `Solarized homepage <http://ethanschoonover.com/solarized>`_
 and its `github page
 <https://github.com/altercation/ethanschoonover.com>`_ more
-information about the color palette and themes for Vim, Mutt, and
-Emacs among others.
+information about the color palette and themes for Vim, Emacs, etc.
 
 Installation
 ===============
@@ -38,9 +37,14 @@ The following *<options>* may be given when loading the theme,
   ``red``, ``magenta``, ``violet``, ``blue``, ``cyan``, or
   ``green``.
 
+For example, to use a dark theme with a cyan accent, 
+
+::
+
+  \usecolortheme[dark,accent=cyan]{solarized}
 
 In addition to the beamer colors that it sets, this package defines
-colors which can be used elsewhere.
+colors which can be used elsewhere, e.g. in ``\setbeamercolor``.
  
 The package defines the sixteen colors of the Solarized palette.
 
@@ -63,12 +67,12 @@ The package defines the sixteen colors of the Solarized palette.
     solarized@cyan      #2aa198 
     solarized@green     #859900 
 
-Additionally, it defines these colors, whose values are
-dependent on options specified when the theme is loaded.
+Additionally, it defines these colors, the values of which are
+dependent on the options specified when the theme is loaded.
 
 - ``solarized@accent`` Accent color.
-- ``solarized@rebase03`` - ``00`` Dark colors if dark theme, light colors if light theme.
-- ``solarized@rebase0`` - ``03`` Light colors if dark theme, dark colors if light theme.
+- ``solarized@rebase03``,``solarized@rebase02``,``solarized@rebase01``,``solarized@rebase00``: Background colors; dark colors if the dark theme is used, light colors if light theme.
+- ``solarized@rebase0``, ``solarized@rebase1``, ``solarized@rebase2``, ``solarized@rebase3``: Foreground colors; light colors if the dark theme is used, dark colors if light theme.
   
 
 
