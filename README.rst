@@ -15,7 +15,7 @@ information about the color palette and themes for Vim, Emacs, etc.
 Installation
 ===============
 
-Download the theme from https://github.com/jrnold/beamercolortheme and
+Download the theme from https://github.com/jrnold/beamercolorthemesolarized and
 place it in either the same folder as your presentation .tex file or
 in the LaTeX installation tree.
 
