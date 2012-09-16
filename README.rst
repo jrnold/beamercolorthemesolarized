@@ -13,7 +13,7 @@ and its `github page
 information about the color palette and themes for Vim, Emacs, etc.
 
 If you use **R**, I have also written a
-[ggplot](http://had.co.nz/ggplot2/) theme and scales using the
+`ggplot <http://had.co.nz/ggplot2/>`_ theme and scales using the
 Solarized colors available at https://github.com/jrnold/ggplotJrnold.
 
 Installation
