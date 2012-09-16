@@ -78,48 +78,48 @@ dependent on the options specified when the theme is loaded.
 - ``solarizedRebase03``, ``solarizedRebase02``, ``solarizedRebase01``, ``solarizedRebase00``: Background colors; dark colors if the dark theme is used, light colors if light theme.
 - ``solarizedRebase0``, ``solarizedRebase1``, ``solarizedRebase2``, ``solarizedRebase3``: Foreground colors; light colors if the dark theme is used, dark colors if light theme.
 
-..
-   Examples
-   =================
 
-   Some example slides (using the example slides from the Beamer
-   documentation).
+Examples
+=================
 
-   A light background with yellow  accents (the default).
+Some example slides (using the example slides from the Beamer
+documentation).
 
-   .. code:: latex
+A light background with yellow  accents (the default).
 
-     \usecolortheme{solarized} 
+.. code:: latex
 
-   .. image:: ./examples/example_yellow_light-1.png
-      :scale: 50%
+  \usecolortheme{solarized} 
 
-   .. image:: ./examples/example_yellow_light-2.png  
-      :scale: 50%
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_light-1.png
+   :scale: 50%
 
-   A light background with blue accents.
+.. image:: ./examples/example_yellow_light-2.png  
+   :scale: 50%
 
-   .. code:: latex
+A light background with blue accents.
 
-     \usecolortheme[accent=blue]{solarized} 
+.. code:: latex
+
+  \usecolortheme[accent=blue]{solarized} 
 
 
-   .. image:: ./examples/example_blue_light-1.png  
-      :scale: 50%
+.. image:: ./examples/example_blue_light-1.png  
+   :scale: 50%
 
-   .. image:: ./examples/example_blue_light-2.png  
-      :scale: 50%
+.. image:: ./examples/example_blue_light-2.png  
+   :scale: 50%
 
-   A dark background with yellow accents.
+A dark background with yellow accents.
 
-   .. code:: latex
+.. code:: latex
 
-     \usecolortheme[dark]{solarized} 
+  \usecolortheme[dark]{solarized} 
 
-   .. image:: ./examples/example_yellow_dark-1.png  
-      :scale: 50%
+.. image:: ./examples/example_yellow_dark-1.png  
+   :scale: 50%
 
-   .. image:: ./examples/example_yellow_dark-2.png  
-      :scale: 50%
+.. image:: ./examples/example_yellow_dark-2.png  
+   :scale: 50%
 
-   ..  LocalWords:  solarized
+..  LocalWords:  solarized
