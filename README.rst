@@ -12,9 +12,9 @@ and its `github page
 <https://github.com/altercation/ethanschoonover.com>`_ more
 information about the color palette and themes for Vim, Emacs, etc.
 
-If you use **R**, I have also written a
-`ggplot <http://had.co.nz/ggplot2/>`_ theme and scales using the
-Solarized colors available at https://github.com/jrnold/ggplotJrnold.
+If you use **R**, I have also written a `ggplot
+<http://had.co.nz/ggplot2/>`_ plot theme using the Solarized colors,
+which is available https://github.com/jrnold/ggplotJrnold.
 
 Installation
 ===============
