@@ -50,28 +50,28 @@
 
 % Set Accent color
 % Ugly. Should be done with a switch
-\ifdefstring{\solarizedAccent}{yellow}{
+\ifdefstring{\solarized@accent}{yellow}{
   \colorlet{solarizedAccent}{solarizedYellow}
 }{}
-\ifdefstring{\solarizedAccent}{orange}{
+\ifdefstring{\solarized@accent}{orange}{
   \colorlet{solarizedAccent}{solarizedOrange}
 }{}
-\ifdefstring{\solarizedAccent}{red}{
+\ifdefstring{\solarized@accent}{red}{
   \colorlet{solarizedAccent}{solarizedRed}
 }{}
-\ifdefstring{\solarizedAccent}{magenta}{
+\ifdefstring{\solarized@accent}{magenta}{
   \colorlet{solarizedAccent}{solarizedMagenta}
 }{}
-\ifdefstring{\solarizedAccent}{violet}{
+\ifdefstring{\solarized@accent}{violet}{
   \colorlet{solarizedAccent}{solarizedViolet}
 }{}
-\ifdefstring{\solarizedAccent}{blue}{
+\ifdefstring{\solarized@accent}{blue}{
   \colorlet{solarizedAccent}{solarizedBlue}
 }{}
-\ifdefstring{\solarizedAccent}{cyan}{
+\ifdefstring{\solarized@accent}{cyan}{
   \colorlet{solarizedAccent}{solarizedCyan}
 }{}
-\ifdefstring{\solarizedAccent}{green}{
+\ifdefstring{\solarized@accent}{green}{
   \colorlet{solarizedAccent}{solarizedGreen}
 }{}
 
@@ -79,7 +79,7 @@
 %% Dark
 % Switch between light and dark themes using the method in the CSS
 % stylesheet http://ethanschoonover.com/solarized
-\ifboolexpe{ bool {solarizedDark}}{
+\ifboolexpe{ bool {solarized@dark}}{
   \colorlet{solarizedRebase03}{solarizedBase03}
   \colorlet{solarizedRebase02}{solarizedBase02}
   \colorlet{solarizedRebase01}{solarizedBase01}
@@ -148,7 +148,7 @@
 
 \setbeamercolor*{section in sidebar shaded}{parent=palette sidebar primary}
 % a.hover.navlink in CSS
-\setbeamercolor*{section in sidebar}{parent=palette sidebar primary, fg=solarizedRebase02}
+\setbeamercolor*{section in sidebar}{parent=palette sidebar primary, fg=solarizedRooebase02}
 \setbeamercolor*{subsection in sidebar}{parent=section in sidebar}
 \setbeamercolor*{subsection in sidebar shaded}{parent=section in sidebar shaded}
 
