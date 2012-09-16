@@ -50,29 +50,29 @@ The package defines the sixteen colors of the Solarized palette.
 
 :: 
 
-    solarized@base03    #002b36 
-    solarized@base02    #073642 
-    solarized@base01    #586e75 
-    solarized@base00    #657b83 
-    solarized@base0     #839496 
-    solarized@base1     #93a1a1 
-    solarized@base2     #eee8d5 
-    solarized@base3     #fdf6e3 
-    solarized@yellow    #b58900 
-    solarized@orange    #cb4b16 
-    solarized@red       #dc322f 
-    solarized@magenta   #d33682 
-    solarized@violet    #6c71c4 
-    solarized@blue      #268bd2 
-    solarized@cyan      #2aa198 
-    solarized@green     #859900 
+    solarizedBase03    #002b36 
+    solarizedBase02    #073642 
+    solarizedBase01    #586e75 
+    solarizedBase00    #657b83 
+    solarizedBase0     #839496 
+    solarizedBase1     #93a1a1 
+    solarizedBase2     #eee8d5 
+    solarizedBase3     #fdf6e3 
+    solarizedYellow    #b58900 
+    solarizedOrange    #cb4b16 
+    solarizedRed       #dc322f 
+    solarizedMagenta   #d33682 
+    solarizedViolet    #6c71c4 
+    solarizedBlue      #268bd2 
+    solarizedCyan      #2aa198 
+    solarizedGreen     #859900 
 
 Additionally, it defines these colors, the values of which are
 dependent on the options specified when the theme is loaded.
 
-- ``solarized@accent`` Accent color.
-- ``solarized@rebase03``, ``solarized@rebase02``, ``solarized@rebase01``, ``solarized@rebase00``: Background colors; dark colors if the dark theme is used, light colors if light theme.
-- ``solarized@rebase0``, ``solarized@rebase1``, ``solarized@rebase2``, ``solarized@rebase3``: Foreground colors; light colors if the dark theme is used, dark colors if light theme.
+- ``solarizedAccent`` Accent color.
+- ``solarizedRebase03``, ``solarizedRebase02``, ``solarizedRebase01``, ``solarizedRebase00``: Background colors; dark colors if the dark theme is used, light colors if light theme.
+- ``solarizedRebase0``, ``solarizedRebase1``, ``solarizedRebase2``, ``solarizedRebase3``: Foreground colors; light colors if the dark theme is used, dark colors if light theme.
   
 
 
