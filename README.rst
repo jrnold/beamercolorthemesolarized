@@ -90,10 +90,10 @@ A light background with yellow  accents (the default).
 
   \usecolortheme{solarized} 
 
-.. image:: examples/example_yellow_light-1.png  
+.. image:: ./examples/example_yellow_light-1.png  
    :scale: 50%
 
-.. image:: examples/example_yellow_light-2.png  
+.. image:: ./examples/example_yellow_light-2.png  
    :scale: 50%
 
 A light background with blue accents.
@@ -103,10 +103,10 @@ A light background with blue accents.
   \usecolortheme[accent=blue]{solarized} 
 
 
-.. image:: examples/example_blue_light-1.png  
+.. image:: ./examples/example_blue_light-1.png  
    :scale: 50%
 
-.. image:: examples/example_blue_light-2.png  
+.. image:: ./examples/example_blue_light-2.png  
    :scale: 50%
 
 A dark background with yellow accents.
@@ -115,10 +115,10 @@ A dark background with yellow accents.
 
   \usecolortheme[dark]{solarized} 
 
-.. image:: examples/example_yellow_dark-1.png  
+.. image:: ./examples/example_yellow_dark-1.png  
    :scale: 50%
 
-.. image:: examples/example_yellow_dark-2.png  
+.. image:: ./examples/example_yellow_dark-2.png  
    :scale: 50%
 
 ..  LocalWords:  solarized
