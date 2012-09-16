@@ -84,7 +84,11 @@ Examples
 Some example slides (using the example slides from the Beamer
 documentation).
 
-A light background with yellow accents.
+A light background with yellow  accents (the default).
+
+.. code:: latex
+
+  \usecolortheme{solarized} 
 
 .. image:: examples/example_yellow_light-1.png  
    :scale: 50%
@@ -94,6 +98,11 @@ A light background with yellow accents.
 
 A light background with blue accents.
 
+.. code:: latex
+
+  \usecolortheme[accent=blue]{solarized} 
+
+
 .. image:: examples/example_blue_light-1.png  
    :scale: 50%
 
@@ -101,6 +110,10 @@ A light background with blue accents.
    :scale: 50%
 
 A dark background with yellow accents.
+
+.. code:: latex
+
+  \usecolortheme[dark]{solarized} 
 
 .. image:: examples/example_yellow_dark-1.png  
    :scale: 50%
