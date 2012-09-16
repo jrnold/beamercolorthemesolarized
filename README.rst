@@ -90,7 +90,7 @@ A light background with yellow  accents (the default).
 
   \usecolortheme{solarized} 
 
-.. image:: ./examples/example_yellow_light-1.png  
+.. image:: https://github.com/jrnold/beamercolorthemesolarized/blob/master/examples/example_yellow_light-1.png
    :scale: 50%
 
 .. image:: ./examples/example_yellow_light-2.png  
