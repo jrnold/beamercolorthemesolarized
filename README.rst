@@ -85,6 +85,9 @@ Examples
 Some example slides (using the example slides from the Beamer
 documentation).
 
+Example 1
+------------------
+
 A light background with yellow  accents (the default).
 
 .. code:: latex
@@ -96,6 +99,9 @@ A light background with yellow  accents (the default).
 
 .. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_light-2.png
    :scale: 50%
+
+Example 2
+------------------
 
 A light background with blue accents.
 
@@ -109,6 +115,9 @@ A light background with blue accents.
 
 .. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-2.png
    :scale: 50%
+
+Example 3
+------------------
 
 A dark background with yellow accents.
 
