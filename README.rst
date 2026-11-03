@@ -1,6 +1,10 @@
 Beamer Color Theme Solarized
 ===============================
 
+.. image:: https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg
+   :target: LICENSE
+   :alt: License: GPL-3.0-or-later
+
 A color theme for `Beamer
 <http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/>`_ using
 the `Solarized <http://ethanschoonover.com/solarized>`_ palette, and
